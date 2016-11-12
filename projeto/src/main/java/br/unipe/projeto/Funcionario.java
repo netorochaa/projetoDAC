@@ -13,38 +13,38 @@ public class Funcionario implements Serializable {
 	private static final long serialVersionUID = -7799369695818057571L;
 	
 	@Id
-	private int id;
-	private String nome;
+	private String id;
+	private String name;
 	private String cargo;
 	
 	public Funcionario() {
 	}
 
 
-	public Funcionario(int id, String nome, String cargo) {
+	public Funcionario(String id, String name, String cargo) {
 		super();
 		this.id = id;
-		this.nome = nome;
+		this.name = name;
 		this.cargo = cargo;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
 
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 
@@ -60,7 +60,7 @@ public class Funcionario implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Funcionário [id=" + this.id + ", nome=" + this.nome + ", cargo=" + this.cargo + "]";
+		return "Funcionário [id=" + this.id + ", nome=" + this.name + ", cargo=" + this.cargo + "]";
 	}
 
 }
